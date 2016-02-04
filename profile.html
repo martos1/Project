@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Instagram</title>
-	<link href="../Project/second_page.css" rel="stylesheet" />
+	<link href="../Project/profile.css" rel="stylesheet" />
 	<script src="..Project/second_page.js"></script>
 </head>
 <body>
@@ -24,23 +24,20 @@
 		</div>
 	</header>
 	<section class="page-section">
-		<div class="nav-section">
-			<span class="profile-photo">
-				<img src="../Project/images/1.jpg"/>
-			</span>
+		<div>
+			<div>
+				<img src="1.jpg" id="profile"> </img>
 			
+			<div id="info">
+			<span class="yourInfo">mariqqkuncheva</span> 
+			<button type="button" id="button">EDIT PROFILE</button>
 			<br/>
-			<a href="#"class="favourites-photos">
-				<img src="../Project/images/star.png"/>
-			</a>
+			<span class="yourInfo">Mariya Kuncheva</span>
 			<br/>
-			<a href="#" class="all-photos">
-				<img src="../Project/images/all.png"/>
-			</a>
 			<br/>
-			<a href="#" class="news">
-				<img src="../Project/images/news.png"/>
-			</a>
+			<span class="yourInfo">44 FAVOURITES</span>
+			</div>
+			</div>
 		</div>
 		<div class="main-page">
 			<div class="selections">
@@ -90,7 +87,7 @@
 		];
 	var photo = document.getElementsByClassName('photos')[0];
 	for(var i = 0; i < img.length ; i+=1){
-		photo.innerHTML += '<span><img src="images/pic/' + img[i] +'"></span>';
+		photo.innerHTML += '<div><img src="images/pic/' + img[i] +'"></div>';
 	}
-	</script>
+</script>
 </html>

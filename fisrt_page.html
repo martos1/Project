@@ -2,26 +2,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Instagram</title>
 <link href="../Project/first_page.css" rel="stylesheet" />
-<script src="..Project/first_page.js"></script>
 </head>
 <body>
 
 <header>
-<img src="../Project/images/icon2.png" class=" icon"/>
+<img src="../Project/images/icon.png" class=" icon"/>
 
 <div class="header tag">
 
 <span class="headline tag">
 <img src="../Project/images/insta.png"/>
 </span>
-</div>
-
-<div>
-<form method="get" action="/search" id="search" class="tag">
-  <input name="q" type="text" size="40" placeholder="Search..." />
-</form>
 </div>
 </header>
 
@@ -37,6 +30,7 @@
 
 
 <div class="photo left">
+<!-- <span> </span>
 <span> </span>
 <span> </span>
 <span> </span>
@@ -44,10 +38,12 @@
 <span> </span>
 <span> </span>
 <span> </span>
+<span> </span>
 <br>
 <span> </span>
 <span> </span>
 <span> </span>
+<span> </span> -->
 </div>
 
 
@@ -66,10 +62,32 @@
 <input type='submit' name='Submit' value='SIGN IN' id="sign"/>
 </form>
 <br/>
-<img src="../Project/images/fb.png" id="fb"/>
+<a href="#" id="fb">
+<img src="../Project/images/fb.png" /> </a>
 </div>
 
 </div>
-
+<script type="text/javascript">
+	var img = [
+	           'article.jpg',
+	           'capetown.jpg',
+	           'cute-puppy.jpg',
+	           'freedom.jpg',
+	           'hqdefault.jpg',
+	           'puppy.jpg',
+	           'pussy-cat.jpg',
+	           'sunshine.jpg',
+	           'Town-Hall.jpg',    
+	           'fun1.gif',
+	           'family-guy.jpg',
+	           'Avatar-FamilyGuy.jpg',
+	           '06car5.jpg'
+	           
+		];
+	var photo = document.getElementsByClassName('photo')[0];
+	for(var i = 0; i < img.length ; i+=1){
+		photo.innerHTML += '<span><img src="images/pic/' + img[i] +'"></span>';
+	}
+</script>
 </body>
 </html>
