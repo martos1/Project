@@ -52,11 +52,22 @@ CREATE TABLE IF NOT EXISTS `favorits` (
 CREATE TABLE IF NOT EXISTS `img` (
 `id` int(11) NOT NULL,
   `name` varchar(20) NOT NULL,
+  `url` varchar(20) NOT NULL,
   `uload_user` int(11) NOT NULL,
   `groups` int(1) NOT NULL,
-  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `likes` int(11) NOT NULL
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура на таблица `likes`
+--
+
+CREATE TABLE IF NOT EXISTS `likes` (
+  `like_user_id` int(11) NOT NULL,
+  `like_img_id` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
